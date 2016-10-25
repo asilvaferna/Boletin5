@@ -58,8 +58,8 @@ public class Boletin5 {
         long opcion = Long.parseLong(obj.nextLine()); //Declaramos un long y le damos valor
         String stringArticulo = ""; //Declaramos un String y le asignamos una cadena vacia
         if (opcion <= 100) stringArticulo = "Bajo"; //Bucle que asigna un valor a stringArticulo dependiendo del valor opcion
-        else if (opcion > 100 && opcion <= 500) stringArticulo = "Medio";
-        else if (opcion > 500 && opcion <= 1000) stringArticulo = "Alto";
+        else if (opcion <= 500) stringArticulo = "Medio";
+        else if (opcion <= 1000) stringArticulo = "Alto";
         else if (opcion > 1000) stringArticulo = "Primera necesidad";
         System.out.println("El articulo es de consumo: " + stringArticulo); //Visualizamos por pantalla el valor de stringArticulo
         //Ejercicio 7

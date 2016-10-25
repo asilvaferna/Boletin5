@@ -37,11 +37,12 @@ public class Boletin5 {
             JOptionPane.showMessageDialog(null, "Pesa mas: " + nom1 + " con un peso de: " + peso1 + " y una diferencia de peso de: " + diferencia);
             
         }
-        else {
+        else if(peso1 < peso2){
             double diferencia = peso2 - peso1;
             JOptionPane.showMessageDialog(null, "Pesa mas: " + nom2 + " con un peso de: " + peso2 + " y una diferencia de peso de: " + diferencia);
    
         }
+        else JOptionPane.showMessageDialog(null, "Pesan igual");
         //Ejercicio 5
         System.out.println("Introduce tres numeros: ");
         int num5 = obj.nextInt(); //Declaramos un entero y le damos valor
